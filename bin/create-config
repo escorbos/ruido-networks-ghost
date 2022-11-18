@@ -47,12 +47,14 @@ function createConfig() {
       transports: ["stdout"],
     },
     mail: {
+      from: "brad@sandboxb331ba159c5e49b2b0b32dd75703402c.mailgun.org",
       transport: "SMTP",
       options: {
-        service: "Mailgun",
         host: "smtp.mailgun.org",
-        port: 465,
-        secure: true,
+        port: 587,
+        service: "Mailgun",
+        secure: false,
+      requireTLS: true
         auth: {
           user: process.env.MAILGUN_SMTP_LOGIN,
           pass: process.env.MAILGUN_SMTP_PASSWORD,
