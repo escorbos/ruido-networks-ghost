@@ -47,7 +47,6 @@ function createConfig() {
       transports: ["stdout"],
     },
     mail: {
-      from: "brad@sandboxb331ba159c5e49b2b0b32dd75703402c.mailgun.org",
       transport: "SMTP",
       options: {
         host: "smtp.mailgun.org",
