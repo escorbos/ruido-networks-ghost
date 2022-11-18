@@ -50,7 +50,7 @@ function createConfig() {
       transport: "SMTP",
       options: {
         host: "smtp.mailgun.org",
-        port: 587,
+        port: 465,
         service: "Mailgun",
         secure: false,
       requireTLS: true
